@@ -33,14 +33,14 @@ More detail please check in the paper.
     
 ## 3.Result
 
-#### (1)
+#### (1) RECM
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/image/RECM.png)
 
-#### (2)
+#### (2) Dilate
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/image/dilate.png)
 
-#### (3)
+#### (3) JPC
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/image/JPC.png)
 
-#### (4)
+#### (4) Pointcloud
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/image/lidar_result.png)
