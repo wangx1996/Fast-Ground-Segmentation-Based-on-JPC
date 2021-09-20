@@ -60,23 +60,18 @@ void JpcGroundRemove::RangeProjection(){
 
 
 void JpcGroundRemove::RECM(){
-
 	float pre_th = 0.;
 	for(int i=0; i<region_minz_.size(); ++i){
 		if( i%length_ == 0){
 			pre_th = region_minz_[i];
 		}else{
-			
 			region_minz_[i] = min(region_minz_[i], pre_th + deltaR_ * (float)tan(sigma_*M_PI/180));
 			pre_th = region_minz_[i] ;
 		}
-
 	}
-			
 
 	for(int i=0; i<width_; ++i){
 		for(int j= 0; j<height_; ++j){
-			
 			int index = i * height_ +j;
 			int region_i = region_.at<uchar>(j, i);
 			float th_height = region_minz_[i*length_ + region_i];
@@ -86,13 +81,12 @@ void JpcGroundRemove::RECM(){
 			if(cloud_->points[id].z >= (th_height+th_g_)){
 				range_image_.at<cv::Vec3b>(j, i) = cv::Vec3b(0,0,255);
 			}
-
 		}
 	}
-	cv::Mat show_image;
-	cv::flip(range_image_,show_image, 0);
-	cv::imshow("TEst", show_image);
-	cv::waitKey(0);
+	//cv::Mat show_image;
+	//cv::flip(range_image_,show_image, 0);
+	//cv::imshow("TEst", show_image);
+	//cv::waitKey(0);
 }
 
 
@@ -143,7 +137,6 @@ void JpcGroundRemove::JCP(){
 				sumD += D(i) ;
 				mask[i] = -1;		
 				continue;
-
 			}
 
 			calRangeDiff(cloud_->points[cloud_index_[cloud_id]], cloud_->points[cloud_index_[ncloud_id]], range_diff);
@@ -162,7 +155,6 @@ void JpcGroundRemove::JCP(){
 				mask[i] = 0;
 			}
 		}
-
 
 		Eigen::VectorXf W(24);
 		W = D / sumD;
@@ -184,7 +176,6 @@ void JpcGroundRemove::JCP(){
 
 	}
 					
-
 	// cv::flip(range_image_,show_image, 0);
 	// cv::imshow("TEst", show_image);
 	// cv::waitKey(0);
@@ -216,4 +207,3 @@ void JpcGroundRemove::GroundRemove(pcl::PointCloud<PointXYZIR>& cloud_IN,
 		}
 	}
 }	
-
