@@ -190,12 +190,12 @@ void JpcGroundRemove::GroundRemove(pcl::PointCloud<PointXYZIR>& cloud_IN,
 	for(int i=0; i<width_; ++i){
 		for(int j=0; j<height_; ++j){
 			int index = cloud_index_[i*height_ + j];
-			if(index != -1){
-				if(range_image_.at<cv::Vec3b>(j, i) == cv::Vec3b(0,255,0)){	
-					cloud_gr.push_back(cloud_->points[index]);
-				}else if(range_image_.at<cv::Vec3b>(j, i) == cv::Vec3b(0,0,255)){	
-					cloud_ob.push_back(cloud_->points[index]);
-				}
+			if(index == -1)
+				continue;
+			if(range_image_.at<cv::Vec3b>(j, i) == cv::Vec3b(0,255,0)){	
+				cloud_gr.push_back(cloud_->points[index]);
+			}else if(range_image_.at<cv::Vec3b>(j, i) == cv::Vec3b(0,0,255)){	
+				cloud_ob.push_back(cloud_->points[index]);
 			}
 		}
 	}
