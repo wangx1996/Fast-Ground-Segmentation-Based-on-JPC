@@ -10,7 +10,6 @@ JpcGroundRemove::JpcGroundRemove(){
 	region_ = cv::Mat::zeros(height_, width_,  CV_8UC1);
 }
 
-
 void JpcGroundRemove::calAngle(float x, float y, float &temp_tangle){
 	if (x == 0 && y == 0) {
 		temp_tangle = 0;
@@ -58,7 +57,6 @@ void JpcGroundRemove::RangeProjection(){
 	// cv::waitKey(0);
 }
 
-
 void JpcGroundRemove::RECM(){
 	float pre_th = 0.;
 	for(int i=0; i<region_minz_.size(); ++i){
@@ -88,7 +86,6 @@ void JpcGroundRemove::RECM(){
 	//cv::imshow("TEst", show_image);
 	//cv::waitKey(0);
 }
-
 
 void JpcGroundRemove::JCP(){
 	vector<cv::Mat> channels;
@@ -173,15 +170,11 @@ void JpcGroundRemove::JCP(){
 		}else{
 			range_image_.at<cv::Vec3b>(id.y, id.x) = cv::Vec3b(0,255,0);
 		}
-
-	}
-					
+	}			
 	// cv::flip(range_image_,show_image, 0);
 	// cv::imshow("TEst", show_image);
 	// cv::waitKey(0);
 }
-
-
 
 void JpcGroundRemove::GroundRemove(pcl::PointCloud<PointXYZIR>& cloud_IN,
 					pcl::PointCloud<PointXYZIR>& cloud_gr, 
