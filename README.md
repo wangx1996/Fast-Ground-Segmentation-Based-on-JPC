@@ -6,7 +6,7 @@ An implementation on ["Shen Z, Liang H, Lin L, Wang Z, Huang W, Yu J. Fast Groun
 
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/test.gif)
 
-## update on 20211110
+## update on 2021/11/10
 
 1. Support ros
 
