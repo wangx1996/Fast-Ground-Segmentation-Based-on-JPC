@@ -6,6 +6,13 @@ An implementation on ["Shen Z, Liang H, Lin L, Wang Z, Huang W, Yu J. Fast Groun
 
 ![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/test.gif)
 
+## update on 20211110
+
+1. Support ros
+
+2. Fix some bug, but still need to be improved
+
+
 ## 1.Priciple of Algorithm
 
 #### (1) RECM for Coarse Ground Segmentation
