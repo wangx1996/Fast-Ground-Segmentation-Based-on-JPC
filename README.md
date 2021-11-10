@@ -1,6 +1,6 @@
 # Fast-Ground-Segmentation-Based-on-JPC
 
-[![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC) [![velodyne_HDL_64 compliant](https://img.shields.io/badge/velodyne_HDL_64-compliant-red.svg)](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC)
+[![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC) [![velodyne_HDL_64 compliant](https://img.shields.io/badge/velodyne_HDL_64-compliant-red.svg)](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC) [![ros kinetic](https://img.shields.io/badge/ros-kinetic-blue.svg)](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC)
 
 An implementation on ["Shen Z, Liang H, Lin L, Wang Z, Huang W, Yu J. Fast Ground Segmentation for 3D LiDAR Point Cloud Based on Jump-Convolution-Process. Remote Sensing. 2021; 13(16):3239. https://doi.org/10.3390/rs13163239"](https://www.mdpi.com/2072-4292/13/16/3239/xml#cite)
 
