@@ -4,6 +4,9 @@
 
 An implementation on ["Shen Z, Liang H, Lin L, Wang Z, Huang W, Yu J. Fast Ground Segmentation for 3D LiDAR Point Cloud Based on Jump-Convolution-Process. Remote Sensing. 2021; 13(16):3239. https://doi.org/10.3390/rs13163239"](https://www.mdpi.com/2072-4292/13/16/3239/xml#cite)
 
+
+![Image text](https://github.com/wangx1996/Fast-Ground-Segmentation-Based-on-JPC/blob/main/test.gif）
+
 ## 1.Priciple of Algorithm
 
 #### (1) RECM for Coarse Ground Segmentation
